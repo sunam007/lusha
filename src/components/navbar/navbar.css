@@ -1,0 +1,11 @@
+.dropdown-section-title {
+  @apply text-sm lg:text-xl font-bold text-[#151417];
+}
+
+.dropdown-item-title {
+  @apply font-medium text-base text-black;
+}
+
+.dropdown-item-description {
+  @apply text-sm font-light leading-4 text-[#8b8b8b] hidden lg:block;
+}
