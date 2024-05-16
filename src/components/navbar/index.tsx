@@ -98,7 +98,7 @@ const Navbar = () => {
     return (
 
         <nav
-            className="bg-[#6610f2] hover:bg-white  text-white hover:text-black fixed w-full z-20 top-0 start-0 transition delay-150 duration-200 ease-in-out py-2 group">
+            className="bg-[#6610f2] hover:bg-white  text-white hover:text-black w-full z-20 top-0 start-0 transition delay-150 duration-200 ease-in-out py-2 group fixed ">
 
             <div className="max-w-7xl flex flex-wrap justify-between lg:justify-start mx-auto px-4 py-2">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse mr-10 ">

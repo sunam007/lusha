@@ -21,7 +21,9 @@ export default function RootLayout({
         <header className="navbar">
           <Navbar />
         </header>
-        <main className="continer mt-[72px]">
+        <main
+        // className="pt-[72px]"
+        >
           {children}
         </main>
       </body>
