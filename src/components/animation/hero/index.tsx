@@ -94,8 +94,8 @@ const HeroAnimation = () => {
 
     return (
         <>
-            <div className=" w-1/2 border border-red-300 relative">
-                <div className="relative w-56 border border-red-200">
+            <div className=" w-1/2  relative">
+                {/* <div className="relative w-56">
                     <div id="target-div" className="absolute bottom-0">
                         🧿
                     </div>
@@ -134,11 +134,14 @@ const HeroAnimation = () => {
                 </div>
                 <div id="second-cursor" className="absolute left-[11px] -top-[23px] opacity-0 origin-center rotate-45">
                     👈
-                </div>
+                </div> */}
 
-                <svg id="path-svg" width={1000} height={500} >
-                    <path className="absolute" stroke="red" fill="none" d="M 400 300 L 400 350 L 500 350 L 400 450 L 500 450 L 500 300 Z"></path>
-                </svg>
+                <div>
+                    <div className="w-64 h-64 border border-red-600 rounded-full relative">
+                        <div className="w-20 h-20 border border-red-400 rounded-full"></div>
+                        <div className="w-20 h-20 border border-red-400 rounded-full absolute left-[170px] top-[180px]"></div>
+                    </div>
+                </div>
             </div>
         </>
     );
