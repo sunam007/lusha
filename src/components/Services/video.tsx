@@ -5,7 +5,7 @@ return (
   autoPlay
   muted
   loop
-  className="hidden lg:block"
+  className=" lg:block"
    >
     <source src="video/pin-point-ideal-customer.mp4" type="video/mp4" />
   </video>

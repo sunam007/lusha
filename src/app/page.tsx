@@ -13,9 +13,9 @@ export default function Home() {
       <Features />
       <Services />
       <div className="max-w-7xl mx-auto px-4 pt-16">
-        <div className="w-50% py-12">
+        {/* <div className="w-50% py-12">
           <HeroAnimation />
-        </div>
+        </div> */}
       </div>
     </>
   );
