@@ -5,6 +5,7 @@ import LogoContainer from "@/components/logo";
 import HeroAnimation from '@/components/animation/hero/index';
 import FreshData from "@/components/freshData";
 import DataAttributes from "@/components/dataAttributes";
+import Testimonial from "@/components/testimonial";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       </div> */}
       <FreshData/>
       <DataAttributes/>
+      <Testimonial/>
     </>
   );
 }
