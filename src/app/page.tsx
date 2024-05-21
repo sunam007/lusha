@@ -1,8 +1,9 @@
-import Services from "@/components/Services";
+import Services from "@/components/services";
 import Features from "@/components/features";
 import Hero from "@/components/hero";
 import LogoContainer from "@/components/logo";
 import HeroAnimation from '@/components/animation/hero/index';
+import FreshData from "@/components/freshData";
 
 
 export default function Home() {
@@ -12,11 +13,12 @@ export default function Home() {
       <LogoContainer />
       <Features />
       <Services />
-      <div className="max-w-7xl mx-auto px-4 pt-16">
-        {/* <div className="w-50% py-12">
+      {/* <div className="max-w-7xl mx-auto px-4 pt-16">
+        <div className="w-50% py-12">
           <HeroAnimation />
-        </div> */}
-      </div>
+        </div>
+      </div> */}
+      <FreshData/>
     </>
   );
 }
