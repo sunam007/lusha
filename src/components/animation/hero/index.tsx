@@ -1,19 +1,16 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import anime from "animejs";
-import { MdFilterList } from "react-icons/md";
-import { BsBuildings } from "react-icons/bs";
 import Image from "next/image";
-import lusha from "@public/icons/lush-icon.png"
-import cursor from "@public/icons/cursor.png"
-import cursorBlue from "@public/icons/cursor-blue.png"
-import man1 from "@public/client/man-1.png"
-import man2 from "@public/client/man-2.png"
-import man3 from "@public/client/man-3.png"
-import woman1 from "@public/client/women-1.png"
-import woman2 from "@public/client/women-2.png"
-import woman3 from "@public/client/women-3.png"
-import { TbRuler3 } from "react-icons/tb";
+import man1 from "@public/client/man-1.png";
+import man2 from "@public/client/man-2.png";
+import man3 from "@public/client/man-3.png";
+import woman1 from "@public/client/women-1.png";
+import woman2 from "@public/client/women-2.png";
+import cursorBlue from "@public/icons/cursor-blue.png";
+import lusha from "@public/icons/lush-icon.png";
+import { BsBuildings } from "react-icons/bs";
+import { MdFilterList } from "react-icons/md";
 
 const HeroAnimation = () => {
     const [showCursor, setShowCursor] = useState(true)
@@ -33,8 +30,8 @@ const HeroAnimation = () => {
             loop: false,
             easing: "easeInOutSine",
             direction: "alternate",
+            autoplay:true,
             complete: function (anim) {
-                console.log(anim);
                 if (anim.completed) {
                     setShowCursor(false)
                 }
@@ -57,8 +54,6 @@ const HeroAnimation = () => {
             loop: false,
             translateX: -5,
             translateY: -10,
-            // display: "block",
-            //   scale:1.1,
         });
 
         anime({
@@ -66,14 +61,12 @@ const HeroAnimation = () => {
             opacity: 1,
             delay: 1900,
             duration: 2000,
-            // direction:"linear"
         });
 
         anime({
             targets: '#second-cursor',
             delay: 2100,
             duration: 5000,
-            // rotate: 45,
             opacity: 1,
             keyframes: [
                 { translateX: -10 },
@@ -94,7 +87,6 @@ const HeroAnimation = () => {
                 if (anim.completed) {
                     setShowFirstAnimation(false);
                     setShowSecondAnimation(true);
-                    // setShowThirdShowCursor(true)
                 }
             }
         });
@@ -138,7 +130,6 @@ const HeroAnimation = () => {
             targets: "#inner-circle div",
             translateX: 5,
             translateY: 5,
-            // delay:2100,
             duration: 2000,
             loop: true,
             easing: "linear",
@@ -149,7 +140,6 @@ const HeroAnimation = () => {
             targets: "#outer-circle div",
             translateX: -5,
             translateY: 5,
-            // delay:2100,
             duration: 2000,
             loop: true,
             easing: "linear",
@@ -158,8 +148,6 @@ const HeroAnimation = () => {
 
         anime({
             targets: "#third-cursor",
-            // translateX:-10,
-            // translateY:-10,
             left: -10,
             top: -10,
             delay: 7000,
@@ -174,8 +162,27 @@ const HeroAnimation = () => {
                 anime.set('#inner-img-two', { visibility: "hidden" });
                 setShowClientMenu(true)
                 anime.set('#third-cursor', { visibility: "hidden" });
+                // anime.set('#client-div', { visibility: "hidden" });
+                // anime.set('#circle-wrapper', { visibility: "hidden" });
             }
         });
+
+        anime({
+            targets: "#third-cursor , #circle-wrapper",
+            scale: 0.5,
+            delay: 9000,
+            duration: 2000,
+            easing: "linear",
+            complete: function (anim) {
+
+                anime.set('#circle-wrapper', { visibility: "hidden" });
+                anime.set('#client-div', { visibility: "hidden" });
+
+                if (anim.completed) {
+                    setShowFirstAnimation(true)
+                }
+            }
+        })
 
 
     }, []);
@@ -192,9 +199,9 @@ const HeroAnimation = () => {
                     <>
                         <div className="relative w-56">
                             <div id="target-div" className="absolute bottom-0">
-                                <Image src={lusha} width={40} height={40} alt="lisha" />
-                                {/* 🧿 */}
+                                <Image src={lusha} width={40} height={40} alt="lusha" />
                             </div>
+
                             <div id="cursor" className={`absolute bottom-0 left-[60px] z-10 ${showCursor ? "block" : "hidden"}`}>
                                 <Image src={cursorBlue} width={24} height={24} alt="cursor" />
                             </div>
