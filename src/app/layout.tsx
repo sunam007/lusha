@@ -22,7 +22,6 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main
-        // className="pt-[72px]"
         >
           {children}
         </main>
