@@ -8,6 +8,7 @@ import DataAttributes from "@/components/dataAttributes";
 import Testimonial from "@/components/testimonial";
 import Capabilities from "@/components/capabilities";
 import Improvements from "@/components/improvements";
+import Cta from "@/components/cta";
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <FreshData/>
       <DataAttributes/>
       {/* <Testimonial/> */}
+      <Cta/>
     </>
   );
 }
