@@ -6,6 +6,7 @@ import HeroAnimation from '@/components/animation/hero/index';
 import FreshData from "@/components/freshData";
 import DataAttributes from "@/components/dataAttributes";
 import Testimonial from "@/components/testimonial";
+import Capabilities from "@/components/capabilities";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <LogoContainer />
       <Features />
+      <Capabilities/>
       <Services />
       {/* <div className="max-w-7xl mx-auto px-4 pt-16">
         <div className="w-50% py-12">
@@ -22,7 +24,7 @@ export default function Home() {
       </div> */}
       <FreshData/>
       <DataAttributes/>
-      <Testimonial/>
+      {/* <Testimonial/> */}
     </>
   );
 }

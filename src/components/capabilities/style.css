@@ -1,0 +1,26 @@
+.capability-tab-title {
+    @apply text-2xl leading-6 lg:text-5xl lg:leading-[48px] font-bold mb-4 min-h-12
+}
+
+.capability-tab-text{
+    @apply text-base font-normal leading-[26px] text-[#151417] lg:mb-8
+}
+.capability-btn{
+    @apply bg-[#600dff] hover:bg-[#4a00d9] text-[#fff] px-5 text-base font-semibold leading-9 border rounded text-center h-10
+}
+
+.capability-section-title{
+    @apply text-[32px] font-bold leading-9 text-[#151417]  lg:mb-2 text-center
+}
+
+.nav-text {
+    @apply text-base font-bold leading-5 text-[#c5c5c5]
+}
+
+.nav-active {
+    @apply text-[#600dff] border-b-2 border-[#600dff] inline-block p-1 rounded-t-lg
+}
+
+.nav-transition {
+    @apply hover:transition hover:delay-150 hover:duration-300 hover:ease-in-out
+}
