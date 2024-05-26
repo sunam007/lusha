@@ -7,6 +7,7 @@ import FreshData from "@/components/freshData";
 import DataAttributes from "@/components/dataAttributes";
 import Testimonial from "@/components/testimonial";
 import Capabilities from "@/components/capabilities";
+import Improvements from "@/components/improvements";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <LogoContainer />
       <Features />
+      <Improvements/>
       <Capabilities/>
       <Services />
       {/* <div className="max-w-7xl mx-auto px-4 pt-16">
