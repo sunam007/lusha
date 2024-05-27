@@ -27,7 +27,7 @@ export default function Home() {
       </div> */}
       <FreshData/>
       <DataAttributes/>
-      {/* <Testimonial/> */}
+      <Testimonial/>
       <Cta/>
     </>
   );

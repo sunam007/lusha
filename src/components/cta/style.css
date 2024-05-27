@@ -1,0 +1,3 @@
+.small-title {
+    @apply lg:text-[32px] lg:leading-9 text-2xl leading-6 text-white font-bold
+}
