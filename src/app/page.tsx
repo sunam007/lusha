@@ -9,6 +9,7 @@ import Testimonial from "@/components/testimonial";
 import Capabilities from "@/components/capabilities";
 import Improvements from "@/components/improvements";
 import Cta from "@/components/cta";
+import Footer from "@/components/footer";
 
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
       <DataAttributes/>
       <Testimonial/>
       <Cta/>
+      <Footer/>
     </>
   );
 }
